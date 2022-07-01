@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import { Section } from "./Section/Section";
-import { FeedbackOptional } from "./FeedbackOptional/FeedbackOptional";
+import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Statistics } from "./Statistics/Statistics";
 import {Notification} from './Notification/Notification'
 
@@ -32,7 +32,7 @@ export class App extends Component {
     return (
       <>
       <Section title='Please leave feedback'>
-          <FeedbackOptional options={Object.keys(this.state)}
+          <FeedbackOptions options={Object.keys(this.state)}
             onBtnClick={ this.counterOfFeedback} />
         </Section>
         <Section
